@@ -437,7 +437,7 @@ a {
 
 .sp-global-menu__item {
   padding: 20px;
-  border-bottom: 1px solid #E5E5E5;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .first-vue__inner {
@@ -660,9 +660,6 @@ a {
   .features__item01 {
     margin: 0 auto;
   }
-  .features__item01 br {
-    display: none;
-  }
 }
 
 .features__item02 {
@@ -674,9 +671,6 @@ a {
   .features__item02 {
     margin: 0 auto;
   }
-  .features__item02 br {
-    display: none;
-  }
 }
 
 .features__item03 {
@@ -687,9 +681,6 @@ a {
 @media screen and (max-width: 767px) {
   .features__item03 {
     margin: 0 auto;
-  }
-  .features__item03 br {
-    display: none;
   }
 }
 
@@ -703,6 +694,12 @@ a {
   font-size: 1.6rem;
   font-weight: bold;
   line-height: 1.625;
+}
+
+@media screen and (max-width: 767px) {
+  .none {
+    display: none;
+  }
 }
 
 .box02-pic {
@@ -984,8 +981,8 @@ table td {
 .contact {
   padding-top: 65px;
   padding-bottom: 67px;
-  background: transparent -webkit-gradient(linear, left top, right top, from(#05A5FA), color-stop(100%, #63FBD7), to(#67FFD6)) 0% 0% no-repeat padding-box;
-  background: transparent linear-gradient(90deg, #05A5FA 0%, #63FBD7 100%, #67FFD6 100%) 0% 0% no-repeat padding-box;
+  background: transparent -webkit-gradient(linear, left top, right top, from(#05a5fa), color-stop(100%, #63fbd7), to(#67ffd6)) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(90deg, #05a5fa 0%, #63fbd7 100%, #67ffd6 100%) 0% 0% no-repeat padding-box;
 }
 
 .contact__ttl {
@@ -1039,9 +1036,9 @@ table td {
 }
 
 .form__label:after {
-  content: '必須';
+  content: "必須";
   color: #fff;
-  background-color: #0C449B;
+  background-color: #0c449b;
   font-size: 1.4rem;
   border-radius: 10px;
   padding: 4px 16px 6px;
@@ -1050,7 +1047,7 @@ table td {
 
 .form__txt {
   width: 499px;
-  background-color: #EEFBFB;
+  background-color: #eefbfb;
   border: none;
   resize: none;
   border-radius: 3px;
@@ -1148,7 +1145,8 @@ input#check1[type="checkbox"]:checked + label::after {
   cursor: pointer;
 }
 
-form.cmxform label.error, label.error {
+form.cmxform label.error,
+label.error {
   color: red;
   font-size: 1.6rem;
   display: block;
